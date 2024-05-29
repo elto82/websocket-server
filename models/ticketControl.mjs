@@ -73,6 +73,7 @@ class TicketControl {
 
     const ticket = this.tickets.shift();
     ticket.escritorio = escritorio;
+
     this.ultimos4.unshift(ticket);
 
     if (this.ultimos4.length > 4) {
